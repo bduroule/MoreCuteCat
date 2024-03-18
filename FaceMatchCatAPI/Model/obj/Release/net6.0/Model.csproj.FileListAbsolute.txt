@@ -1,0 +1,11 @@
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\bin\Release\net6.0\Model.deps.json
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\bin\Release\net6.0\Model.dll
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\bin\Release\net6.0\Model.pdb
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\Model.AssemblyInfoInputs.cache
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\Model.AssemblyInfo.cs
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\Model.dll
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\refint\Model.dll
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\Model.pdb
+C:\Users\benja\OneDrive\Documents\repo\MoreCuteCat\FaceMatchCatAPI\Model\obj\Release\net6.0\ref\Model.dll

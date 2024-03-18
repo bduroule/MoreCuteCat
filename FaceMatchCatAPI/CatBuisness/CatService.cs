@@ -22,7 +22,7 @@ namespace Services
         {
             var randomCats = _catRepository.GetAllCats()
                 .Where(cat => !excludeIds.Contains(cat.Id))
-                .OrderBy(c => Guid.NewGuid())
+                .OrderBy(c => c.Score)
                 .Take(count)
                 .ToList();
 
@@ -59,7 +59,7 @@ namespace Services
 
             if (!participatingChats.Any(c => c.Id == winningChatId))
             {
-                throw new InvalidOperationException($"winner ca dosent exist in this context {winningChatId}");
+                throw new InvalidOperationException($"winner cat dosent exist in this context {winningChatId}");
             }
 
             foreach (var cat in participatingChats)

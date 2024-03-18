@@ -23,6 +23,7 @@ export class GridCatComponent implements OnInit {
   ngOnInit(): void {
     this.catsObservable.subscribe({
       next: (cats: Cat[]) => {
+        cats.sort((a: any, b: any) => b.score - a.score);
         this.cats = cats;
       },
       error: (error: any) => {

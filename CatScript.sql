@@ -1,6 +1,13 @@
+CREATE TABLE IF NOT EXISTS public."Cats"
+(
+    "Id" text COLLATE pg_catalog."default" NOT NULL,
+    "Score" integer,
+    "Url" text COLLATE pg_catalog."default"
+);
+
 INSERT INTO public."Cats"(
 	"Id", "Score", "Url")
-	VALUES (?, ?, ?)
+	VALUES
 		('MTgwODA3MA', 1500, 'http://24.media.tumblr.com/tumblr_m82woaL5AD1rro1o5o1_1280.jpg'),
         ('tt', 1500, 'http://24.media.tumblr.com/tumblr_m29a9d62C81r2rj8po1_500.jpg'),
         ('bmp', 1500, 'http://25.media.tumblr.com/tumblr_m4bgd9OXmw1qioo2oo1_500.jpg'),

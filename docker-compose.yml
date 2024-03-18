@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgresUser
+      POSTGRES_PASSWORD: postgresPW
+      POSTGRES_DB: postgreDB
+      PG_DATA: /var/lib/postgresql/data
+    ports:
+      - "5455:5432"
+    volumes:
+      - ./CatScript.sql:/docker-entrypoint-initdb.d/0_init.sql
+      - ./postgres-data:/var/lib/postgresql/data
+    networks:
+      - net
+
+  api:
+    build:
+      context: ./FaceMatchCatAPI/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - ConnectionStrings__WebApiDatabase=User ID =postgresUser;Password=postgresPW;Server=postgres;Port=5432;Database=postgreDB; Integrated Security=true;Pooling=true;
+    ports:
+      - "7041:80"
+    depends_on:
+      - postgres
+    networks:
+      - net
+
+  frontend:
+    build:
+      context: ./Front/
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "4200:80"
+volumes:
+  postgres-data:
+
+networks:
+  net:
+    driver: bridge
