@@ -31,8 +31,16 @@ builder.Services.AddTransient<ICatService, CatService>();
 // Repository
 builder.Services.AddTransient<ICatRepository, CatRepository>();
 
-
 var app = builder.Build();
+
+app.UseHttpsRedirection();
+
+app.UseCors(options =>
+{
+    options.AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader();
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

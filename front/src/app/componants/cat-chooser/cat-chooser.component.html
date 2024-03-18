@@ -1,0 +1,4 @@
+<div *ngFor="let cat of cats" class="grid grid-cols-2 gap-4 h-screen">
+    <app-cat-choice (click)="pushCatVoted(cats[0])" [cat]="cats[0]"></app-cat-choice>
+    <app-cat-choice (click)="pushCatVoted(cats[1])" [cat]="cats[1]"></app-cat-choice>
+</div>
