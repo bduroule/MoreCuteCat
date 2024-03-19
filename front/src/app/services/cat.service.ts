@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { Cat } from '../componants/grid-cat/model/cat.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, tap } from 'rxjs';
-import { environment } from '../../environments/environment.development';
-import { error } from 'console';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
